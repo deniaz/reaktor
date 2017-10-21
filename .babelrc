@@ -1,0 +1,14 @@
+{
+  "presets": ["env"],
+  "plugins": [
+    "syntax-jsx",
+    "transform-react-jsx",
+    [
+      "transform-runtime",
+      {
+        "polyfill": false,
+        "regenerator": true
+      }
+    ]
+  ]
+}
