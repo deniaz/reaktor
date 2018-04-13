@@ -1,0 +1,8 @@
+@import '../../identity/colors';
+
+.ticket {
+  background: $white;
+  box-shadow: 0 0.25rem 1rem 0 rgba($silver, 0.2);
+  text-align: center;
+  padding: 80px 60px;
+}

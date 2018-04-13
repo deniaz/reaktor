@@ -1,0 +1,14 @@
+@import '../../colors', '../../typography';
+
+.title {
+  @include font-title(1.563rem);
+  @include font-regular;
+}
+
+.title--secondary {
+  color: $silver;
+}
+
+.title--accent {
+  color: $purple;
+}

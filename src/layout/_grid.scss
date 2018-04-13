@@ -1,0 +1,47 @@
+@import './spacing';
+
+$breakpoint-sm: 576 / 16;
+$breakpoint-md: 768 / 16;
+$breakpoint-lg: 992 / 16;
+$breakpoint-xl: 1200 / 16;
+
+$breakpoints: (
+  sm: #{$breakpoint-sm}rem,
+  md: #{$breakpoint-md}rem,
+  lg: #{$breakpoint-lg}rem,
+  xl: #{$breakpoint-xl}rem
+);
+
+@mixin grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: $default-gutter;
+  grid-row-gap: $default-gutter;
+  margin: 0 auto;
+
+  max-width: $breakpoint-sm;
+
+  @each $key, $value in $breakpoints {
+    @if $key != sm {
+      @media (min-width: $value) {
+        max-width: $value;
+      }
+    }
+  }
+}
+
+@mixin grid-block($width, $offset: span) {
+  @if $offset == span {
+    grid-column-start: $offset $width;
+    grid-column-end: auto;
+  } @else {
+    grid-column-start: $offset + 1;
+    grid-column-end: $offset + $width + 1;
+  }
+}
+
+@mixin bigger-than($size) {
+  @media (min-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}

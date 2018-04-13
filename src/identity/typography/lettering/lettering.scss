@@ -1,0 +1,14 @@
+@import '../../colors', '../../typography';
+
+.lettering {
+  @include font-light;
+  color: $black;
+}
+
+.lettering--secondary {
+  color: $silver;
+}
+
+.lettering--accent {
+  color: $purple;
+}
