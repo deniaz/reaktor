@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Header matches snapshot 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="container"
+  >
+    <a
+      className="logo-area"
+      href="#"
+    >
+      <img
+        alt="MyConf"
+        className="logo"
+        src="test-file-stub"
+      />
+    </a>
+    <nav
+      className="navigation navigation"
+    >
+      <ul>
+        <li
+          className="list-item"
+        >
+          <a
+            className="navigation-link"
+            href="#"
+          >
+            Speakers
+          </a>
+        </li>
+        <li
+          className="list-item"
+        >
+          <a
+            className="navigation-link"
+            href="#"
+          >
+            Workshops
+          </a>
+        </li>
+        <li
+          className="list-item"
+        >
+          <a
+            className="navigation-link"
+            href="#"
+          >
+            Venue
+          </a>
+        </li>
+        <li
+          className="list-item"
+        >
+          <a
+            className="navigation-link"
+            href="#"
+          >
+            Sponsors
+          </a>
+        </li>
+        <li
+          className="list-item"
+        >
+          <a
+            className="navigation-link"
+            href="#"
+          >
+            About
+          </a>
+        </li>
+        <li
+          className="list-item"
+        >
+          <button
+            className="button button--primary"
+            disabled={false}
+            onClick={[Function]}
+          >
+            Tickets
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+`;
