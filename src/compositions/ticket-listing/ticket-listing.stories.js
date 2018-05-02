@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { TicketListing } from '.';
 
-storiesOf('TicketListing', module).add('TicketListing', () => (
+storiesOf('04 — Compositions/Ticket Listing', module).add('TicketListing', () => (
   <TicketListing
     title="Buy a ticket"
     tickets={[

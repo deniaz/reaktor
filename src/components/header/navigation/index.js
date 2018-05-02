@@ -17,7 +17,7 @@ export const Navigation = ({ className }) => (
         </li>
       ))}
       <li className={styles['list-item']}>
-        <Button label="Tickets" primary />
+        <Button onClick={() => {}} label="Tickets" primary />
       </li>
     </ul>
   </nav>

@@ -6,7 +6,7 @@ import { Lettering } from '../../identity/typography/lettering';
 import { Headline } from '../../identity/typography/headline';
 import image from './demo.jpg';
 
-storiesOf('TextImage', module).add('TextImage', () => (
+storiesOf('03 — Components/TextImage', module).add('TextImage', () => (
   <TextImage img={image}>
     {[
       <Headline accent>An Amazing Space</Headline>,

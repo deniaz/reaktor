@@ -3,4 +3,4 @@ import React from 'react';
 
 import { Homepage } from '.';
 
-storiesOf('Homepage', module).add('Homepage', () => <Homepage />);
+storiesOf('06 — Pages/Homepage', module).add('Homepage', () => <Homepage />);

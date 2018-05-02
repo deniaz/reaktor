@@ -1,8 +1,8 @@
 const path = require('path');
-const sharedRules = require('../shared-webpack-rules');
 
-module.exports = (storybookConfig, configType) => {
-  storybookConfig.module.rules = [...storybookConfig.module.rules, ...sharedRules];
+const config = require('../webpack.config');
 
-  return storybookConfig;
+module.exports = (baseConfig, configType) => {
+  config.module.rules.forEach((rule) => baseConfig.module.rules.push(rule));
+  return baseConfig;
 };

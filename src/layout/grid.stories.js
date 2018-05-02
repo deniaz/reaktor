@@ -7,7 +7,7 @@ import styles from './_story.scss';
 const Container = ({ children }) => <div className={styles.container}>{children}</div>;
 const Box = () => <div className={styles.box} />;
 
-storiesOf('Grid', module)
+storiesOf('05 — Layout/Grid', module)
   .add('4 Blocks — 3 Columns', () => (
     <div>
       <Display>4 Blocks — 3 Columns</Display>

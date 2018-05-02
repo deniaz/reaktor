@@ -7,7 +7,7 @@ import { Headline } from './headline';
 import { Lettering } from './lettering';
 import { Title } from './title';
 
-storiesOf('Typography', module)
+storiesOf('01 — Identity/Typography', module)
   .add('Display', () => (
     <div>
       <Display>This is a display</Display>

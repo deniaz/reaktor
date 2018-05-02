@@ -2,4 +2,4 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { SoldTickets } from '.';
 
-storiesOf('SoldTickets', module).add('SoldTickets', () => <SoldTickets count={123} />);
+storiesOf('04 — Compositions/Sold Tickets', module).add('SoldTickets', () => <SoldTickets count={123} />);

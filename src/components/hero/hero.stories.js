@@ -7,7 +7,7 @@ import { Title } from '../../identity/typography/title';
 
 import demo from './demo.jpg';
 
-storiesOf('Hero', module)
+storiesOf('03 — Components/Hero', module)
   .add('Hero', () => (
     <Hero title="My Conf Switzerland">
       {[<Headline>Where we meet, to meet.</Headline>, <Title>January 19th, 2019</Title>, <Title>Schiffbau, Zurich</Title>]}

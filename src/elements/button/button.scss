@@ -10,6 +10,8 @@
   cursor: pointer;
   border-radius: 0.125rem;
   transition: background $transition-delay $transition-timing, color $transition-delay $transition-timing;
+  text-decoration: none;
+  display: inline-block;
 
   &:hover {
     background: $cyan-light;
@@ -31,9 +33,8 @@
   background: $orange-dark;
   color: $snow;
   box-shadow: 0 0.25rem 1rem 0 rgba($steel, 0.2);
-  transition: background $transition-delay $transition-timing,
-  color $transition-delay $transition-timing,
-  box-shadow $transition-delay $transition-timing;
+  transition: background $transition-delay $transition-timing, color $transition-delay $transition-timing,
+    box-shadow $transition-delay $transition-timing;
 
   &:hover {
     background: $orange;

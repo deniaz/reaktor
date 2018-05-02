@@ -3,4 +3,4 @@ import React from 'react';
 
 import { Header } from '.';
 
-storiesOf('Header', module).add('Header', () => <Header />);
+storiesOf('03 — Components/Header', module).add('Header', () => <Header />);
