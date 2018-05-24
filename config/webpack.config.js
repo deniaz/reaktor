@@ -4,10 +4,9 @@ const autoprefixer = require('autoprefixer');
 const dev = process.env.NODE_ENV === 'development';
 
 module.exports = {
-  entry: ['babel-polyfill', 'preset/preset.css', './lib'],
+  entry: ['babel-polyfill', 'normalize.css', './lib'],
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.css$/,
         use: [
           'style-loader',
@@ -23,7 +22,9 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               ident: 'postcss',
-              plugins: () => [require('postcss-flexbugs-fixes'), autoprefixer({ flexbox: 'no-2009' })],
+              plugins: () => [require('postcss-flexbugs-fixes'), autoprefixer({
+                flexbox: 'no-2009'
+              })],
             },
           },
         ],
