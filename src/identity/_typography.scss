@@ -1,33 +1,37 @@
 @import './typefaces';
 
-$default-font-size: 1rem;
-$default-line-height: 1.45;
+$base-font-size: 1rem;
+$default-line-height: 1.2;
 
-@mixin font-light {
-  font-family: $default-typeface;
-  font-weight: $font-weight-light;
-  font-size: $default-font-size;
-  line-height: $default-line-height;
-}
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
 
-@mixin font-regular {
+@mixin typeface() {
   font-family: $default-typeface;
+  font-size: $base-font-size;
   font-weight: $font-weight-regular;
-  font-size: $default-font-size;
-  line-height: $default-line-height;
 }
 
-@mixin font-bold {
-  font-family: $default-typeface;
-  font-weight: $font-weight-bold;
-  font-size: $default-font-size;
-  line-height: $default-line-height;
-}
+// 1.333 — Perfect Fourth from https://type-scale.com/ with a Base of 16
+$type-scale: (
+  display: 3.157rem,
+  headline: 2.369rem,
+  title: 1.777rem,
+  subheader: 1.333rem,
+  body: 1rem,
+  small: 0.75rem,
+  tiny: 0.563rem,
+  supertiny: 0.422rem
+);
 
-@mixin font-title($size) {
-  @include font-bold;
-  color: $black;
-  font-size: $size;
-  text-transform: uppercase;
-  margin: 0 0 $size/2 0;
-}
+$line-height: (
+  display: 1.2,
+  headline: 1.2,
+  title: 1.2,
+  subheader: 1.2,
+  body: 1.6,
+  small: 1.8,
+  tiny: 1.8,
+  supertiny: 1.8
+);

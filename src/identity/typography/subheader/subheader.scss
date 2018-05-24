@@ -1,20 +1,20 @@
 @import '../../colors', '../../typography';
 
-.headline {
-  $font-size: map-get($type-scale, headline);
+.subheader {
+  $font-size: map-get($type-scale, subheader);
   @include typeface();
   font-size: $font-size;
   font-weight: $font-weight-bold;
-  line-height: map-get($line-height, headline);
+  line-height: map-get($line-height, subheader);
 
   text-transform: uppercase;
   margin: 0 0 ($font-size / 2) 0;
 }
 
-.headline--secondary {
+.subheader--secondary {
   color: $silver;
 }
 
-.headline--accent {
+.subheader--accent {
   color: $purple;
 }

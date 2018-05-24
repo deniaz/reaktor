@@ -1,0 +1,17 @@
+@import '../../identity/colors', '../../layout/spacing';
+
+.Card {
+  background: $white;
+  max-width: 20rem;
+  border-radius: 2px;
+  border: 1px solid $snow;
+}
+
+.Card__image {
+  max-width: 100%;
+  height: auto;
+}
+
+.Card__content {
+  padding: $spacing-lg;
+}

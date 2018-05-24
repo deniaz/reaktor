@@ -1,0 +1,64 @@
+@import '../../identity/colors', '../../identity/typography', '../../identity/transitions', '../../layout/spacing';
+
+.Checkbox {
+  cursor: pointer;
+}
+
+.Checkbox__element {
+  display: inline-block;
+
+  position: relative;
+  height: 1rem;
+  width: 1rem;
+  border: 2px solid deeppink;
+  border-radius: 2px;
+  top: 4px;
+}
+
+.Checkbox__control {
+  opacity: 0;
+}
+
+.Checkbox__label {
+  &:before,
+  &:after {
+    content: '';
+    display: inline-block;
+  }
+
+  &:before {
+    height: 1rem;
+    width: 1rem;
+    border: 2px solid $purple;
+    border-radius: 2px;
+    left: 0;
+    top: 4px;
+    position: relative;
+    margin-right: $spacing-md;
+  }
+
+  &:after {
+    height: 4px;
+    width: 8px;
+    border-left: 2px solid $melting-iceberg;
+    border-bottom: 2px solid $melting-iceberg;
+    position: absolute;
+
+    transform: rotate(-45deg);
+
+    left: 31px;
+    top: 18px;
+  }
+}
+
+.Checkbox__control:checked + .Checkbox__label:before {
+  background-color: $purple;
+}
+
+.Checkbox__control + .Checkbox__label:after {
+  content: none;
+}
+
+.Checkbox__control:checked + .Checkbox__label:after {
+  content: '';
+}

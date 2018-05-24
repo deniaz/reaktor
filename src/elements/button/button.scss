@@ -1,7 +1,8 @@
 @import '../../identity/colors', '../../identity/typography', '../../identity/transitions';
 
 .button {
-  @include font-light;
+  @include typeface();
+  font-weight: $font-weight-light;
   text-transform: uppercase;
   background: $cyan-dark;
   color: $snow;

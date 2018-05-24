@@ -1,0 +1,64 @@
+@import '../../identity/colors', '../../identity/typography', '../../identity/transitions', '../../layout/spacing';
+
+.Radio {
+  cursor: pointer;
+}
+
+.Radio__element {
+  display: inline-block;
+
+  position: relative;
+  height: 1rem;
+  width: 1rem;
+  border: 2px solid deeppink;
+  border-radius: 2px;
+  top: 4px;
+}
+
+.Radio__control {
+  opacity: 0;
+}
+
+.Radio__label {
+  &:before,
+  &:after {
+    content: '';
+    display: inline-block;
+  }
+
+  &:before {
+    height: 1rem;
+    width: 1rem;
+    border: 2px solid $purple;
+    border-radius: 50%;
+    left: 0;
+    top: 4px;
+    position: relative;
+    margin-right: $spacing-md;
+  }
+
+  &:after {
+    height: 4px;
+    width: 8px;
+    border-left: 2px solid $melting-iceberg;
+    border-bottom: 2px solid $melting-iceberg;
+    position: absolute;
+
+    transform: rotate(-45deg);
+
+    left: 31px;
+    top: 18px;
+  }
+}
+
+.Radio__control:checked + .Radio__label:before {
+  background-color: $purple;
+}
+
+.Radio__control + .Radio__label:after {
+  content: none;
+}
+
+.Radio__control:checked + .Radio__label:after {
+  content: '';
+}

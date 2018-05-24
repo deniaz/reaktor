@@ -1,18 +1,18 @@
 @import '../../colors', '../../typography';
 
-.lettering {
+.Label {
   $font-size: map-get($type-scale, body);
   @include typeface();
   font-size: $font-size;
-  font-weight: $font-weight-light;
+  font-weight: $font-weight-bold;
   line-height: map-get($line-height, body);
   color: $black;
 }
 
-.lettering--secondary {
+.Label--secondary {
   color: $silver;
 }
 
-.lettering--accent {
+.Label--accent {
   color: $purple;
 }
