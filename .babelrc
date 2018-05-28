@@ -1,8 +1,13 @@
 {
-  "presets": ["env", "react", "stage-2"],
-  "env": {
-    "production": {
-      "presets": ["react-optimize"]
-    }
-  }
+  "presets": ["env", "stage-0", "react"],
+  "plugins": [
+    "babel-plugin-macros",
+    [
+      "transform-runtime",
+      {
+        "polyfill": false,
+        "regenerator": true
+      }
+    ]
+  ]
 }

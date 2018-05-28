@@ -1,4 +1,7 @@
 module.exports = {
+  rootDir: '../../',
+  testMatch: ['<rootDir>/src/**/*.test.js?(x)'],
+  setupFiles: ['<rootDir>/config/jest/setup.js'],
   transform: {
     '^.+\\.jsx?$': 'babel-jest',
   },

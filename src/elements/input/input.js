@@ -10,7 +10,7 @@ export const Input = ({ name, value = '', type = 'text', label = null, onChange 
 
 Input.propTypes = {
   label: string,
-  type: oneOf('color', 'date', 'datetime', 'datetime-local', 'email', 'number', 'text', 'password', 'search', 'tel'),
+  type: oneOf(['color', 'date', 'datetime', 'datetime-local', 'email', 'number', 'text', 'password', 'search', 'tel']),
   name: string.isRequired,
   value: string.isRequired,
   onChange: func,

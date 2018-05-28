@@ -8,20 +8,16 @@ import { Select } from '.';
 const stories = storiesOf('02 — Elements/Select', module);
 
 stories.addDecorator(withKnobs);
-stories.add(
-  'Select',
-  () => (
-    <Select
-      label={text('Label', "What's your favourite food?")}
-      name="food"
-      value={select('Value', ['pizza', 'burger'])}
-      options={[
-        { label: 'Pizza', value: 'pizza' },
-        { label: 'Burger', value: 'burger' },
-        { label: 'Veggies', value: 'veggies', disabled: true },
-      ]}
-      onChange={(val) => action('Select#change', val)}
-    />
-  ),
-  { notes: 'A very simple component' },
-);
+stories.add('Select', () => (
+  <Select
+    label={text('Label', "What's your favourite food?")}
+    name="food"
+    value={select('Value', ['pizza', 'burger'])}
+    options={[
+      { label: 'Pizza', value: 'pizza' },
+      { label: 'Burger', value: 'burger' },
+      { label: 'Veggies', value: 'veggies', disabled: true },
+    ]}
+    onChange={(val) => action('Select#change', val)}
+  />
+));

@@ -21,18 +21,14 @@ stories
       <Button primary label="Click me" />
     </Card>
   ))
-  .add(
-    'Card w/o Image',
-    () => (
-      <Card title={text('Title', `I'm a Card`)}>
-        <Lettering>
-          {text(
-            'Content',
-            `Man muss sich nicht unbedingt ins Flugzeug setzen, um etwas zu erleben und sich zu entspannen – auch die Schweiz hat als Feriendestination Überraschungen zu bieten.`,
-          )}
-        </Lettering>
-        <Button accent label="Click me" />
-      </Card>
-    ),
-    { notes: 'A very simple component' },
-  );
+  .add('Card w/o Image', () => (
+    <Card title={text('Title', `I'm a Card`)}>
+      <Lettering>
+        {text(
+          'Content',
+          `Man muss sich nicht unbedingt ins Flugzeug setzen, um etwas zu erleben und sich zu entspannen – auch die Schweiz hat als Feriendestination Überraschungen zu bieten.`,
+        )}
+      </Lettering>
+      <Button accent label="Click me" />
+    </Card>
+  ));

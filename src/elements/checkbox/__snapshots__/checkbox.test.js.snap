@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Element Checkbox matches snapshot 1`] = `
+<label
+  className="Checkbox"
+>
+  <input
+    checked={false}
+    className="Checkbox__control"
+    name="Name"
+    onChange={[Function]}
+    type="checkbox"
+    value="Obama"
+  />
+</label>
+`;

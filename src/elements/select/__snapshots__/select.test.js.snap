@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Element Select matches snapshot 1`] = `
+<label>
+  <select
+    multiple={false}
+    name="Name"
+    onChange={[Function]}
+  />
+</label>
+`;

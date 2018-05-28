@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Element Link matches snapshot 1`] = `
+<a
+  className="link"
+  href="#"
+>
+  A Link
+</a>
+`;

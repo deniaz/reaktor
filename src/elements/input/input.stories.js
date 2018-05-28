@@ -8,15 +8,11 @@ import { Input } from '.';
 const stories = storiesOf('02 — Elements/Input', module);
 
 stories.addDecorator(withKnobs);
-stories.add(
-  'Input',
-  () => (
-    <Input
-      label={text('Label', "What's your name?")}
-      name="name"
-      value={text('Value', 'Elon')}
-      onChange={() => action('Checkbox#change')}
-    />
-  ),
-  { notes: 'A very simple component' },
-);
+stories.add('Input', () => (
+  <Input
+    label={text('Label', "What's your name?")}
+    name="name"
+    value={text('Value', 'Elon')}
+    onChange={() => action('Checkbox#change')}
+  />
+));

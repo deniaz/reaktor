@@ -8,16 +8,12 @@ import { Checkbox } from '.';
 const stories = storiesOf('02 — Elements/Checkbox', module);
 
 stories.addDecorator(withKnobs);
-stories.add(
-  'Checkbox',
-  () => (
-    <Checkbox
-      label={text('Label', 'I agree with GDPR')}
-      name="gdpr"
-      value="on"
-      checked={boolean('Checked', false)}
-      onChange={() => action('Checkbox#change')}
-    />
-  ),
-  { notes: 'A very simple component' },
-);
+stories.add('Checkbox', () => (
+  <Checkbox
+    label={text('Label', 'I agree with GDPR')}
+    name="gdpr"
+    value="on"
+    checked={boolean('Checked', false)}
+    onChange={() => action('Checkbox#change')}
+  />
+));

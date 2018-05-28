@@ -17,5 +17,5 @@ export const Card = ({ title, image = null, children }) => (
 Card.propTypes = {
   title: string.isRequired,
   image: string,
-  children: oneOfType(element, arrayOf(element)).isRequired,
+  children: oneOfType([element, arrayOf(element)]).isRequired,
 };

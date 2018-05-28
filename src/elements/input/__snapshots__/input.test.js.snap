@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Element Input matches snapshot 1`] = `
+<label>
+  <input
+    name="Name"
+    onChange={[Function]}
+    type="text"
+    value="Foo"
+  />
+</label>
+`;

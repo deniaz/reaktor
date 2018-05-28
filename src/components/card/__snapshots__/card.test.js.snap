@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Card w/ Image matches snapshot 1`] = `
+<div
+  className="Card"
+>
+  <img
+    alt="I'm a Card"
+    className="Card__image"
+    src="https://bit.ly/2IMJ8rX"
+  />
+  <div
+    className="Card__content"
+  >
+    <h3
+      className="title"
+    >
+      I'm a Card
+    </h3>
+    <p>
+      yolo
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Component Card w/o Image matches snapshot 1`] = `
+<div
+  className="Card"
+>
+  <div
+    className="Card__content"
+  >
+    <h3
+      className="title"
+    >
+      I'm a Card
+    </h3>
+    <p>
+      yolo
+    </p>
+  </div>
+</div>
+`;

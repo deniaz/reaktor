@@ -18,16 +18,12 @@ stories
       onClick={action('Button#onClick')}
     />
   ))
-  .add(
-    'Button as Link',
-    () => (
-      <Button
-        label={text('Label', 'Link that looks like a button')}
-        primary={boolean('Primary', true)}
-        large={boolean('Large', true)}
-        disabled={boolean('Disabled', false)}
-        href="http://example.com"
-      />
-    ),
-    { notes: 'A very simple component' },
-  );
+  .add('Button as Link', () => (
+    <Button
+      label={text('Label', 'Link that looks like a button')}
+      primary={boolean('Primary', true)}
+      large={boolean('Large', true)}
+      disabled={boolean('Disabled', false)}
+      href="http://example.com"
+    />
+  ));

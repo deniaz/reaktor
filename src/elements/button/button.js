@@ -11,6 +11,10 @@ export const Button = ({ label = null, href, primary = false, large = false, dis
     console.warn(`Cannot have href and onClick`);
   }
 
+  if (!href && !onClick) {
+    console.warn(`Must have either href or onClick`);
+  }
+
   const props = {
     disabled,
     onClick,

@@ -8,16 +8,12 @@ import { Radio } from '.';
 const stories = storiesOf('02 — Elements/Radio', module);
 
 stories.addDecorator(withKnobs);
-stories.add(
-  'Radio',
-  () => (
-    <Radio
-      label={text('Label', 'I agree with GDPR')}
-      name="gdpr"
-      value="on"
-      checked={boolean('Checked', false)}
-      onChange={() => action('Radio#change')}
-    />
-  ),
-  { notes: 'A very simple component' },
-);
+stories.add('Radio', () => (
+  <Radio
+    label={text('Label', 'I agree with GDPR')}
+    name="gdpr"
+    value="on"
+    checked={boolean('Checked', false)}
+    onChange={() => action('Radio#change')}
+  />
+));

@@ -8,15 +8,8 @@ import { Lettering } from '../../identity/typography/lettering';
 const stories = storiesOf('02 — Elements/Link', module);
 
 stories.addDecorator(withKnobs);
-stories.add(
-  'Link',
-  () => (
-    <Lettering>
-      {' '}
-      <Link href={text('URL', '#')}>{text('Label', 'My lovely link')}</Link>
-    </Lettering>
-  ),
-  {
-    notes: 'A very simple component',
-  },
-);
+stories.add('Link', () => (
+  <Lettering>
+    <Link href={text('URL', '#')}>{text('Label', 'My lovely link')}</Link>
+  </Lettering>
+));
